@@ -4,48 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Frontend Mentor | Order summary card</title>
+    <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
     <main>
-      <picture>
+      <div class="col product-image">
         <img
-          alt="Illustration of woman listening to music"
-          src="images/illustration-hero.svg"
+          src="images/image-product-desktop.jpg"
+          alt="Chanel perfume bottle."
         />
-      </picture>
-      <section>
-        <h1>Order Summary</h1>
-        <p>
-          You can now listen to millions of songs, audiobooks, and podcasts on
-          any device anywhere you like!
+      </div>
+      <section class="col product-container">
+        <div class="product-tag">Perfume</div>
+        <h1 class="product-title">Gabrielle Essence Eau De Parfum</h1>
+        <p class="product-desc">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
         </p>
-        <div class="plan_container">
-          <div class="plan_icon">
-            <img alt="musical note icon" src="images/icon-music.svg" />
-          </div>
-          <div class="plan_desc">
-            <h2>Annual Plan</h2>
-            <p>$59.99/year</p>
-          </div>
-          <button class="btn-link">Change</button>
+        <div class="product-price">
+          <p class="product-price__sale">$149.99</p>
+          <p class="product-price__list">$169.99</p>
         </div>
-        <button class="btn-primary">Proceed to Payment</button>
-        <button class="btn-secondary">Cancel Order</button>
+        <button class="btn">
+          <svg
+            class="cart"
+            width="15"
+            height="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z"
+              fill="#FFF"
+            />
+          </svg>
+          <p>Add to Cart</p>
+        </button>
       </section>
     </main>
   </body>
